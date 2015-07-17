@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5Yl-RM-Ga2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="dw3-Ct-UbZ">
+            <objects>
+                <navigationController id="5Yl-RM-Ga2" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ssm-Zg-xzR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="iaN-jo-PdD" kind="relationship" relationship="rootViewController" id="yRb-zi-bfY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LMd-tw-odu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2368" y="255"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="AhH-Zh-Aux">
+            <objects>
+                <tableViewController storyboardIdentifier="KHomeClassStoryboad" id="iaN-jo-PdD" customClass="KTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="183" sectionHeaderHeight="22" sectionFooterHeight="22" id="EQN-op-GAZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCellID" rowHeight="300" id="C0E-LH-zX4" customClass="KTableViewCell">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C0E-LH-zX4" id="eIC-88-vdx">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ER-o1-Aek">
+                                            <rect key="frame" x="0.0" y="1" width="320" height="307"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imageViewCell" destination="1ER-o1-Aek" id="alv-Pe-wwi"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="iaN-jo-PdD" id="89J-Ib-3bN"/>
+                            <outlet property="delegate" destination="iaN-jo-PdD" id="JNh-P2-yub"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="18T-uy-Tsw"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Nc-18-DRD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1939" y="262"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ceH-rv-o6W">
+            <objects>
+                <viewController storyboardIdentifier="K123ClassStoryboad" id="zG5-rc-Htd" customClass="K123ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3HC-7t-fQJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="gVf-v3-wup"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="k9u-sQ-JeN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xqr-W9-SST" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1525" y="652"/>
+        </scene>
+        <!--Color View Controller-->
+        <scene sceneID="dSB-lk-3zG">
+            <objects>
+                <viewController storyboardIdentifier="KColorClassStoryboad" id="5jK-c2-V6R" customClass="KColorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zSE-ou-er8"/>
+                        <viewControllerLayoutGuide type="bottom" id="9Et-Id-r47"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e3f-0A-lTx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m3E-4c-PX9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1024" y="401"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="CcZ-o1-bOg">
+            <objects>
+                <viewController storyboardIdentifier="KABCClassStoryboad" id="eaV-i7-7PB" customClass="KABCViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bn4-3A-iVK"/>
+                        <viewControllerLayoutGuide type="bottom" id="dFs-Xd-yxN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Chc-pK-tKa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LiU-vw-DbA">
+                                <rect key="frame" x="0.0" y="64" width="320" height="450"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aj3-bN-AYF">
+                                        <rect key="frame" x="0.0" y="269" width="320" height="1"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ei2-aM-a4K">
+                                        <rect key="frame" x="0.0" y="217" width="320" height="1"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QAO-nz-od5">
+                                        <rect key="frame" x="240" y="219" width="1" height="49"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jad-1C-KHj">
+                                        <rect key="frame" x="160" y="219" width="1" height="49"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e8q-HC-88f">
+                                        <rect key="frame" x="80" y="219" width="1" height="49"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lNQ-hd-5cH">
+                                        <rect key="frame" x="130" y="157" width="50" height="50"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smallA.png" translatesAutoresizingMaskIntoConstraints="NO" id="eqh-Z6-7WY">
+                                        <rect key="frame" x="172" y="224" width="40" height="40"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="capitalA.png" translatesAutoresizingMaskIntoConstraints="NO" id="NYE-TV-phn">
+                                        <rect key="frame" x="16" y="224" width="40" height="40"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cursivea.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="L78-x1-4Zu">
+                                        <rect key="frame" x="98" y="224" width="40" height="40"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smallcursivea.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="VTh-j9-4vR">
+                                        <rect key="frame" x="261" y="224" width="40" height="40"/>
+                                    </imageView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" directionalLockEnabled="YES" alwaysBounceHorizontal="YES" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BoH-OM-8iI">
+                                        <rect key="frame" x="35" y="280" width="250" height="145"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </scrollView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="wbm-Gy-umy">
+                                        <rect key="frame" x="80" y="0.0" width="150" height="150"/>
+                                    </imageView>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="V5V-hM-oLV">
+                                        <rect key="frame" x="140" y="422" width="39" height="37"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="pageIndicatorTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="currentPageIndicatorTintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="pageControllerChage:" destination="eaV-i7-7PB" eventType="valueChanged" id="4Lw-SK-YoS"/>
+                                        </connections>
+                                    </pageControl>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fby-QV-2sL">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem image="Prev.png" id="AAw-Xv-ngO"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="cOt-ks-jmf"/>
+                                    <barButtonItem image="Next.png" id="4hP-VD-VYB"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="animationImageview" destination="lNQ-hd-5cH" id="QhO-r6-Tlg"/>
+                        <outlet property="captalLetterImageview" destination="NYE-TV-phn" id="3Bx-9t-55A"/>
+                        <outlet property="cursivLetterImageview" destination="VTh-j9-4vR" id="BjL-3E-WaU"/>
+                        <outlet property="cursiveCaptalLetterImageview" destination="L78-x1-4Zu" id="XKv-31-2SU"/>
+                        <outlet property="mainImageview" destination="wbm-Gy-umy" id="c6j-Mq-k0e"/>
+                        <outlet property="pageViewController" destination="V5V-hM-oLV" id="6xe-5W-U95"/>
+                        <outlet property="scrollView" destination="BoH-OM-8iI" id="PLe-Ms-j4x"/>
+                        <outlet property="smallLetterImageview" destination="eqh-Z6-7WY" id="Sol-sZ-L7r"/>
+                        <outlet property="subView" destination="LiU-vw-DbA" id="os4-pa-M97"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1V3-nz-OEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1525" y="-234"/>
+        </scene>
+        <!--Work Sheet View Controller-->
+        <scene sceneID="D4j-Eh-v9I">
+            <objects>
+                <viewController storyboardIdentifier="workSheetStoryBoad" id="fel-KN-Mbp" customClass="KWorkSheetViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gFI-y3-7Ti"/>
+                        <viewControllerLayoutGuide type="bottom" id="yT9-u8-1H2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="y3b-8y-cPY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dj4-ZL-RbK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1048" y="-234"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.png" width="170" height="160"/>
+        <image name="Next.png" width="24" height="24"/>
+        <image name="Prev.png" width="24" height="24"/>
+        <image name="capitalA.png" width="800" height="771"/>
+        <image name="cursivea.jpg" width="500" height="500"/>
+        <image name="smallA.png" width="256" height="256"/>
+        <image name="smallcursivea.jpg" width="800" height="800"/>
+    </resources>
+</document>
